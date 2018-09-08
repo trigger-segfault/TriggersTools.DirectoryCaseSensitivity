@@ -238,7 +238,7 @@ namespace TriggersTools.IO.Windows.Native {
 		/// <para/>
 		/// This parameter can be NULL.
 		/// </param>
-		/// <returns></returns>
+		/// <returns>The file handle on success, otherwise <see cref="InvalidHandle"/>.</returns>
 		[DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Auto)]
 		public static extern IntPtr CreateFile(
 			 [MarshalAs(UnmanagedType.LPTStr)] string filename,

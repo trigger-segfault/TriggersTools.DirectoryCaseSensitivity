@@ -98,7 +98,7 @@ namespace TriggersTools.IO.Windows {
 		/// </returns>
 		/// 
 		/// <exception cref="ArgumentNullException"><paramref name="directory"/> is null.</exception>
-		/// <exception cref="FileNotFoundException">The directory does not exist.</exception>
+		/// <exception cref="DirectoryNotFoundException">The directory does not exist.</exception>
 		/// <exception cref="UnauthorizedAccessException">Failed to open the directory.</exception>
 		/// <exception cref="Win32Exception">Unspecified error while opening directory.</exception>
 		/// <exception cref="Exception">Unknown NTSTATUS result.</exception>
@@ -149,10 +149,10 @@ namespace TriggersTools.IO.Windows {
 		/// <param name="enable">True if case sensitivity should be enabled.</param>
 		/// 
 		/// <exception cref="ArgumentNullException"><paramref name="directory"/> is null.</exception>
-		/// <exception cref="FileNotFoundException">The directory does not exist.</exception>
+		/// <exception cref="DirectoryNotFoundException">The directory does not exist.</exception>
 		/// <exception cref="UnauthorizedAccessException">Failed to open the directory.</exception>
 		/// <exception cref="Win32Exception">Unspecified error while opening directory.</exception>
-		/// <exception cref="IOException">The directory is not empty!</exception>
+		/// <exception cref="IOException">The directory contains matching case-insensitive files.</exception>
 		/// <exception cref="NotSupportedException">
 		/// This version of Windows does not support directory case sensitivity.
 		/// </exception>
@@ -212,10 +212,10 @@ namespace TriggersTools.IO.Windows {
 		/// <returns>True if the inherited directory was case sensitive.</returns>
 		/// 
 		/// <exception cref="ArgumentNullException"><paramref name="directory"/> is null.</exception>
-		/// <exception cref="FileNotFoundException">The directory does not exist.</exception>
+		/// <exception cref="DirectoryNotFoundException">The directory does not exist.</exception>
 		/// <exception cref="UnauthorizedAccessException">Failed to open the directory.</exception>
 		/// <exception cref="Win32Exception">Unspecified error while opening directory.</exception>
-		/// <exception cref="IOException">The directory is not empty!</exception>
+		/// <exception cref="IOException">The directory contains matching case-insensitive files.</exception>
 		/// <exception cref="Exception">Unknown NTSTATUS result.</exception>
 		public static bool Inherit(string directory) {
 			if (directory == null)
@@ -241,10 +241,9 @@ namespace TriggersTools.IO.Windows {
 		/// <param name="enable">True if case sensitivity should be enabled.</param>
 		/// 
 		/// <exception cref="ArgumentNullException"><paramref name="directory"/> is null.</exception>
-		/// <exception cref="FileNotFoundException">The directory does not exist.</exception>
+		/// <exception cref="DirectoryNotFoundException">The directory does not exist.</exception>
 		/// <exception cref="UnauthorizedAccessException">Failed to open the directory.</exception>
 		/// <exception cref="Win32Exception">Unspecified error while opening directory.</exception>
-		/// <exception cref="IOException">The directory is not empty!</exception>
 		/// <exception cref="NotSupportedException">
 		/// This version of Windows does not support directory case sensitivity.
 		/// </exception>
@@ -270,10 +269,9 @@ namespace TriggersTools.IO.Windows {
 		/// <returns>True if the inherited directory was case sensitive.</returns>
 		/// 
 		/// <exception cref="ArgumentNullException"><paramref name="directory"/> is null.</exception>
-		/// <exception cref="FileNotFoundException">The directory does not exist.</exception>
+		/// <exception cref="DirectoryNotFoundException">The directory does not exist.</exception>
 		/// <exception cref="UnauthorizedAccessException">Failed to open the directory.</exception>
 		/// <exception cref="Win32Exception">Unspecified error while opening directory.</exception>
-		/// <exception cref="IOException">The directory is not empty!</exception>
 		/// <exception cref="Exception">Unknown NTSTATUS result.</exception>
 		public static bool CreateInherit(string directory) {
 			if (directory == null)

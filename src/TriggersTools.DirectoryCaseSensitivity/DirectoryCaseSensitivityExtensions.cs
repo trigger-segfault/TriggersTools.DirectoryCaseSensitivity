@@ -19,7 +19,9 @@ namespace TriggersTools.IO.Windows {
 		/// false.
 		/// </returns>
 		/// 
-		/// <exception cref="Win32Exception">Error while opening directory.</exception>
+		/// <exception cref="DirectoryNotFoundException">The directory does not exist.</exception>
+		/// <exception cref="UnauthorizedAccessException">Failed to open the directory.</exception>
+		/// <exception cref="Win32Exception">Unspecified error while opening directory.</exception>
 		/// <exception cref="Exception">Unknown NTSTATUS result.</exception>
 		public static bool IsCaseSensitive(this DirectoryInfo dirInfo) {
 			return DirectoryCaseSensitivity.IsCaseSensitive(dirInfo.FullName);
@@ -30,7 +32,10 @@ namespace TriggersTools.IO.Windows {
 		/// <param name="dirInfo">The directory info to set.</param>
 		/// <param name="enable">True if case sensitivity should be enabled.</param>
 		/// 
-		/// <exception cref="Win32Exception">Error while opening directory.</exception>
+		/// <exception cref="DirectoryNotFoundException">The directory does not exist.</exception>
+		/// <exception cref="UnauthorizedAccessException">Failed to open the directory.</exception>
+		/// <exception cref="Win32Exception">Unspecified error while opening directory.</exception>
+		/// <exception cref="IOException">The directory contains matching case-insensitive files.</exception>
 		/// <exception cref="NotSupportedException">
 		/// This version of Windows does not support directory case sensitivity.
 		/// </exception>
