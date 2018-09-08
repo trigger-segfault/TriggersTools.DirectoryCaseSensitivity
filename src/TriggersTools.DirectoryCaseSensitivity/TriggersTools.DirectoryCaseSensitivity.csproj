@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net40</TargetFrameworks>
+    <RootNamespace>TriggersTools.IO.Windows</RootNamespace>
+    <AssemblyName>TriggersTools.DirectoryCaseSensitivity</AssemblyName>
+    <Company>Trigger's Tools &amp; Games</Company>
+    <Description>A library for working with Windows 10, April 2018 Update's addition of per-directory case sensitivity.</Description>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageTags>window, 10, case, sensitive, sensitivity, file, system, directory</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/trigger-death/TriggersTools.DirectoryCaseSensitivity</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/trigger-death/TriggersTools.DirectoryCaseSensitivity/blob/master/License.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/trigger-death/TriggersTools.DirectoryCaseSensitivity</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/trigger-death/TriggersTools.DirectoryCaseSensitivity/master/NuGetIcon.png</PackageIconUrl>
+    <Copyright>Copyright © Robert Jordan 2018</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Robert Jordan</Authors>
+  </PropertyGroup>
+
+</Project>

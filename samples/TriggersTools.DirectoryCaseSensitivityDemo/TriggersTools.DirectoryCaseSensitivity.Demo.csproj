@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp2.0;net40</TargetFrameworks>
+    <RootNamespace>TriggersTools.IO.Windows.Demo</RootNamespace>
+    <Company>Trigger's Tools &amp; Games</Company>
+    <Copyright>Copyright © Robert Jordan 2018</Copyright>
+    <PackageProjectUrl>https://github.com/trigger-death/TriggersTools.DirectoryCaseSensitivity</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/trigger-death/TriggersTools.DirectoryCaseSensitivity</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>A demo for testing the TriggersTools.DirectoryCaseSensitivity library.</Description>
+    <PackageLicenseUrl>https://github.com/trigger-death/TriggersTools.DirectoryCaseSensitivity/blob/master/License.md</PackageLicenseUrl>
+    <AssemblyName>TriggersTools.DirectoryCaseSensitivity.Demo</AssemblyName>
+    <Authors>Robert Jordan</Authors>
+    <PackageReleaseNotes>Demo</PackageReleaseNotes>
+    <PackageTags>window, 10, case, sensitive, sensitivity, file, system, directory, demo</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/trigger-death/TriggersTools.DirectoryCaseSensitivity/master/NuGetIcon.png</PackageIconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\TriggersTools.DirectoryCaseSensitivity\TriggersTools.DirectoryCaseSensitivity.csproj" />
+  </ItemGroup>
+
+</Project>
