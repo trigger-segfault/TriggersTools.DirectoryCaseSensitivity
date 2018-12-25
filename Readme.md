@@ -3,6 +3,7 @@
 [![NuGet Version](https://img.shields.io/nuget/v/TriggersTools.DirectoryCaseSensitivity.svg?style=flat)](https://www.nuget.org/packages/TriggersTools.DirectoryCaseSensitivity/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/TriggersTools.DirectoryCaseSensitivity.svg?style=flat)](https://www.nuget.org/packages/TriggersTools.DirectoryCaseSensitivity/)
 [![Creation Date](https://img.shields.io/badge/created-september%202018-A642FF.svg?style=flat)](https://github.com/trigger-death/TriggersTools.DirectoryCaseSensitivity/commit/b7a822e96dd0503425fbe6f135f723cf28ac207c)
+[![Discord](https://img.shields.io/discord/436949335947870238.svg?style=flat&logo=discord&label=chat&colorB=7389DC&link=https://discord.gg/vB7jUbY)](https://discord.gg/vB7jUbY)
 
 A library for working with Windows 10, April 2018 Update's addition of per-directory case sensitivity.
 
